@@ -29,11 +29,25 @@ nav{
 }
 
 .logo{
-    font-size:28px;
-    font-weight:800;
-    color:#0F172A;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
+.logo img{
+    width: 150px;
+    height: 34px;
+    object-fit: contain;
+    display: block;
+}
+
+.logo-text h3{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #0F172A;
+}
 .menu{
     display:flex;
     list-style:none;
@@ -286,4 +300,60 @@ nav{
 
 .stat-box p{
     font-size:18px;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+    background:#0F172A;
+    padding:50px 0 25px;
+}
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.footer-top h2{
+    color:white;
+    font-size:28px;
+}
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a{
+    width: 42px;
+    height: 42px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-size: 18px;
+
+    transition: .3s;
+}
+
+.social-icons a:hover{
+    background: #2563EB;
+}
+.footer hr{
+    border:none;
+    border-top:1px solid rgba(255,255,255,.2);
+}
+
+.copyright{
+    text-align:center;
+    color:#cbd5e1;
+    margin-top:25px;
+    font-size:15px;
 }
